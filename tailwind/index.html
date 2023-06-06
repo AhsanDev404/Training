@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="
+        background-image: url('https://cdn.shopify.com/s/files/1/0009/2900/5634/files/bg_a71a657f-2566-4a98-a55e-e76b5555861c.png?21731');
+      "
+    >
+      <div
+        class="bg-blue-600 px-2 md:px-10 py-2 flex align-middle cursor-pointer justify-between"
+      >
+        <div class="md:flex hidden">
+          <i
+            class="fa-solid fa-people-group text-white text-lg mr-2 hover:text-gray-200"
+          ></i>
+          <p class="text-white text-lg hover:text-gray-200">
+            EVERY ORDER CAN HELP END CHILDHOOD HUNGER
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <div class="relative">
+            <button class="text-white hover:text-gray-200">
+              <i class="fa-solid fa-phone-volume mx-1"></i>
+              Support
+              <i class="fa-solid fa-chevron-down mx-1"></i>
+            </button>
+            <ul class="absolute hidden text-gray-700 pt-1">
+              <li>
+                <a
+                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Option 1</a
+                >
+              </li>
+              <li>
+                <a
+                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Option 2</a
+                >
+              </li>
+              <li>
+                <a
+                  class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Option 3</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative inline-block">
+            <button class="text-white hover:text-gray-200">
+              <i class="fa-solid fa-user mx-1"></i>
+              Account
+              <i class="fa-solid fa-chevron-down mx-1"></i>
+            </button>
+            <ul class="absolute hidden text-gray-700 pt-1">
+              <li>
+                <a
+                  class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Option A</a
+                >
+              </li>
+              <li>
+                <a
+                  class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Option B</a
+                >
+              </li>
+              <li>
+                <a
+                  class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                  >Option C</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="hover:text-gray-200 text-white">
+            <i class="fa-solid fa-cart-shopping mx-2"></i>
+            Cart (0)
+          </div>
+        </div>
+      </div>
+
+      <nav class="mt-3 uppercase">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center h-16 justify-between mx-2">
+            <div class="flex items-center">
+              <a href="#">
+                <img
+                  class="md:w-60 w-28"
+                  src="https://cdn.shopify.com/s/files/1/2451/8571/files/naturally-honest_911b83fb-85cd-42d6-8bc9-aab9bb97abb8_360x.png?v=1674668138"
+                  alt="logo"
+                  srcset=""
+                />
+              </a>
+            </div>
+
+            <div class="hidden md:block w-full">
+              <div class="flex items-baseline space-x-4 justify-between">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <div class="relative">
+                    <button
+                      class="text-white bg-blue-600 px-3 py-2 rounded font-bold"
+                    >
+                      SHOP
+                      <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <ul class="absolute hidden text-gray-700 pt-1">
+                      <li>
+                        <a
+                          class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >Option 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >Option 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >Option 3</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium"
+                    >Quality</a
+                  >
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium"
+                    >Mission</a
+                  >
+                  <div class="relative">
+                    <button
+                      class="text-blue-600 hover:text-gray-400 px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      #SHOP
+                    </button>
+                    <ul class="absolute hidden text-gray-700 pt-1">
+                      <li>
+                        <a
+                          class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >Option 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >Option 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >Option 3</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="border-gray-300 border-2 pr-2 rounded-lg">
+                  <input
+                    class="border-none bg-transparent"
+                    type="text"
+                    placeholder="Search all product..."
+                  />
+                  <i
+                    class="fa-solid fa-magnifying-glass text-gray-400 text-xl"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="-mr-2 flex md:hidden gap-2">
+              <button>
+                <i
+                  class="fa-solid fa-magnifying-glass text-blue-600 text-xl font"
+                ></i>
+              </button>
+              <button
+                type="button"
+                class="text-blue-600 font-bold"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                id="mobile-menu-button"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <hr class="border-2 border-blue-600" />
+
+    <section class="p-5 md:flex">
+      <div class="flex overflow-x-scroll hidden-scroller md:hidden">
+        <img
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+          alt=""
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+          alt=""
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+          alt=""
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+          alt=""
+        />
+        <img
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+          alt=""
+        />
+      </div>
+
+      <div class="hidden md:flex md:w-6/12">
+        <div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+            alt=""
+          />
+        </div>
+
+        <div class="w-full text-center">
+          <h1 class="text-2xl text-blue-600">
+            AGELESS MULTI-COLLAGEN® PROTEIN POWDER
+          </h1>
+
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+              alt="Image"
+              class="hover:scale-150 transition-transform duration-300"
+            />
+            <div class="absolute top-0 left-0 hidden group-hover:block">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1684195314"
+                alt="Magnified Image"
+                class="w-64 h-64"
+              />
+            </div>
+          </div>
+          <img
+            class="mx-auto"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/free-report-image-1546015359856-1555446388183.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="md:w-6/12">
+        <h1 class="text-center text-blue-600 text-3xl font-semibold">
+          Chose Your Package
+        </h1>
+        <p class="text-center">Select Your money-saving option bellow:</p>
+        <div class="flex">
+          <button
+            class="bg-blue-600 rounded m-5 text-white py-3 font-semibold text-lg w-full"
+          >
+            <p class="w-32 mx-auto">One-Time Purchase</p>
+          </button>
+          <button
+            class="relative border-2 border-blue-600 py-3 rounded m-5 text-blue-600 font-semibold text-lg w-full"
+          >
+            <p class="w-32 mx-auto">Subscribe & Save 40%</p>
+            <p
+              class="text-white bg-green-600 w-4 absolute -right-3 -top-3 text-xs rounded-full"
+            >
+              ?
+            </p>
+          </button>
+        </div>
+        <div class="flex m-5 flex-col gap-3 md:gap-0 md:flex-row">
+          <div class="border-2 border-blue-600 text-center h-fit p-5">
+            <h1 class="text-6xl text-blue-600">1 Pack</h1>
+            <h1 class="text-5xl mt-3">$ 39</h1>
+            <button class="mt-16 bg-green-600 w-full py-3 text-white rounded">
+              CHOOSE FLAVOUR
+            </button>
+          </div>
+          <div class="border-4 border-green-600 text-center">
+            <div class="bg-blue-600 py-2 text-white">Most Papular</div>
+            <div class="p-5">
+              <h1 class="text-6xl text-blue-600">1 Pack</h1>
+              <h1 class="text-5xl mt-3 text-green-600">$ 35 Per Pack</h1>
+              <h1 class="text-4xl mt-3 text-red-700">(save 10%)</h1>
+              <button class="mt-16 bg-green-600 w-full py-3 text-white rounded">
+                CHOOSE FLAVOUR
+              </button>
+            </div>
+          </div>
+          <div class="border-2 border-blue-600 text-center p-5 h-fit">
+            <h1 class="text-6xl text-blue-600">1 Pack</h1>
+            <h1 class="text-5xl mt-3">$ 39</h1>
+            <button class="mt-16 bg-green-600 w-full py-3 text-white rounded">
+              CHOOSE FLAVOUR
+            </button>
+          </div>
+        </div>
+
+        <p class="font-bold text-blue-600 text-center my-5">
+          PHOTOS FROM THE #biotrust COMMUNITY
+        </p>
+        <div class="flex gap-3 overflow-x-scroll hide-scrollbar">
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+          <img
+            class="w-20 hover:opacity-50 cursor-pointer"
+            src="https://cdn-yotpo-images-production.yotpo.com/manual-upload/6/6a6b1958-15ce-4dfa-8224-1a82229ce8e7/low_resolution.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-2 border-blue-600" />
+
+    <section class="md:w-4/12 m-5 md:m-10">
+      <h1 class="text-xl font-semibold">
+        The No-Clump Multi-Collagen Protein Powder
+      </h1>
+      <h2 class="font-semibold mt-5">
+        Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:
+      </h2>
+      <ul class="list-disc list-inside ml-5">
+        <li>Healthy Skin, Hair, and NailsFootnote</li>
+        <li>Gut, Joint, and Bone HealthFootnote</li>
+        <li>Athletic Performance, Recovery, and an Active Lifestyle</li>
+      </ul>
+
+      <h2 class="font-semibold mt-5">
+        Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:
+      </h2>
+      <ul class="list-disc list-inside ml-5">
+        <li>
+          Loaded with 10 Grams of Collagen Protein (per serving) including
+          BioActive Collagen Peptides
+        </li>
+        <li>Gut, Joint, and Bone HealthFootnote</li>
+        <li>Athletic Performance, Recovery, and an Active Lifestyle</li>
+      </ul>
+    </section>
+
+    <section class="bg-blue-600 text-white">
+      <div class="bg-blue-900 flex flex-wrap md:flex-nowrap">
+        <div
+          class="md:border-2 md:border-white pt-10 p-5 md:relative md:w-full w-6/12"
+        >
+          <img
+            class="md:absolute md:-top-8 md:left-32 self-center md:w-16 ml-2"
+            src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286"
+            alt=""
+            srcset=""
+          />
+          <p class="font-semibold">60-DAY MONEY BACK GUARANTEE</p>
+        </div>
+        <div
+          class="md:border-2 md:border-white pt-10 p-5 md:relative md:w-full w-6/12"
+        >
+          <img
+            class="md:absolute md:-top-8 md:left-32 self-center md:w-16 ml-2"
+            src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286"
+            alt=""
+            srcset=""
+          />
+          <p class="font-semibold">60-DAY MONEY BACK GUARANTEE</p>
+        </div>
+        <div
+          class="md:border-2 md:border-white pt-10 p-5 md:relative md:w-full w-6/12"
+        >
+          <img
+            class="md:absolute md:-top-8 md:left-32 self-center md:w-16 ml-2"
+            src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286"
+            alt=""
+            srcset=""
+          />
+          <p class="font-semibold">60-DAY MONEY BACK GUARANTEE</p>
+        </div>
+        <div
+          class="md:border-2 md:border-white pt-10 p-5 md:relative md:w-full w-6/12"
+        >
+          <img
+            class="md:absolute md:-top-8 md:left-32 self-center md:w-16 ml-2"
+            src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286"
+            alt=""
+            srcset=""
+          />
+          <p class="font-semibold">60-DAY MONEY BACK GUARANTEE</p>
+        </div>
+      </div>
+
+      <div class="md:flex py-5 bg-blue-800">
+        <div class="md:border-r-8 border-green-600 px-5">
+          <h1 class="text-6xl md:text-right">FEATURED CUSTOMER REVIEW</h1>
+        </div>
+        <hr class="border-4 border-green-600 my-4 w-11/12 mx-auto md:hidden" />
+        <div class="px-5">
+          <h1 class="text-3xl mt-5">
+            "I love it! No taste or smell. I put it in my coffee first thing.
+            Cuts my hunger and gives me energy." Jacqueline T.
+          </h1>
+        </div>
+      </div>
+
+      <div class="py-5">
+        <h1 class="text-white text-center text-4xl font-semibold">
+          Product Video
+        </h1>
+        <div class="my-10">
+          <video
+            class="w-full md:w-8/12 mx-auto"
+            controls
+            src="https://i.vimeocdn.com/video/738131621-005d69ec0ab0b35c9251a0af62294cfd54ba699e39599562aa00049444d1b299-d?mw=1300&mh=731&q=70"
+          ></video>
+          <div class="md:flex justify-evenly">
+            <video
+              class="w-full md:w-4/12 mt-10"
+              controls
+              src="https://i.vimeocdn.com/video/738131621-005d69ec0ab0b35c9251a0af62294cfd54ba699e39599562aa00049444d1b299-d?mw=1300&mh=731&q=70"
+            ></video>
+            <video
+              class="w-full md:w-4/12 mt-10"
+              controls
+              src="https://i.vimeocdn.com/video/738131621-005d69ec0ab0b35c9251a0af62294cfd54ba699e39599562aa00049444d1b299-d?mw=1300&mh=731&q=70"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-5 p-5">
+      <h1 class="text-center text-2xl text-blue-600 font-bold">
+        Frequently Bought Together
+      </h1>
+      <div class="block md:flex m-10">
+        <img
+          class="w-28 h-28"
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_245x245.png?v=1684195314"
+          alt=""
+        />
+
+        <img
+          class="w-28 h-28"
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_245x245.png?v=1684195314"
+          alt=""
+        />
+
+        <img
+          class="w-28 h-28"
+          src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_245x245.png?v=1684195314"
+          alt=""
+        />
+        <div class="m-5">
+          <span class="text-blue-300 font-bold">Total Price: </span
+          ><span class="font-bold">$187.00</span>
+          <button
+            class="block bg-green-600 px-3 py-2 uppercase text-white font-semibold"
+          >
+            Add Selected to cart
+          </button>
+        </div>
+      </div>
+
+      <ul class="list-inside list-disc md:w-9/12 mx-auto">
+        <li>
+          <span class="text-blue-600"
+            >This item: AGELESS MULTI-COLLAGEN® PROTEIN POWDER</span
+          >
+          <span
+            >he No-Clump Multi-Collagen Protein Powder Ageless Multi-Collagen
+            Provides You 5 Types of Collagen to Support: Healthy Skin, Hair, and
+            Nail…</span
+          >
+          <select class="w-52 rounded" name="" id="">
+            <option value="">item-1</option>
+            <option value="">item-1</option>
+            <option value="">item-1</option>
+          </select>
+        </li>
+        <li>
+          <span class="text-blue-600"
+            >This item: AGELESS MULTI-COLLAGEN® PROTEIN POWDER</span
+          >
+          <span
+            >he No-Clump Multi-Collagen Protein Powder Ageless Multi-Collagen
+            Provides You 5 Types of Collagen to Support: Healthy Skin, Hair, and
+            Nail…</span
+          >
+          <select class="w-52 rounded" name="" id="">
+            <option value="">item-1</option>
+            <option value="">item-1</option>
+            <option value="">item-1</option>
+          </select>
+        </li>
+        <li>
+          <span class="text-blue-600"
+            >This item: AGELESS MULTI-COLLAGEN® PROTEIN POWDER</span
+          >
+          <span
+            >he No-Clump Multi-Collagen Protein Powder Ageless Multi-Collagen
+            Provides You 5 Types of Collagen to Support: Healthy Skin, Hair, and
+            Nail…</span
+          >
+          <select class="w-52 rounded" name="" id="">
+            <option value="">item-1</option>
+            <option value="">item-1</option>
+            <option value="">item-1</option>
+          </select>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="border-2 border-blue-600" />
+
+    <section class="mt-10 px-5">
+      <div class="hidden md:block">
+        <div
+          class="border-b border-gray-300 sticky top-0 bg-white mt-5 ml-5 pb-1"
+        >
+          <div class="flex text-blue-600">
+            <button
+              id="tab1"
+              class="py-2 bg-white border-b-4 border-transparent font-semibold focus:outline-none uppercase"
+            >
+              Health Benefits
+            </button>
+            <button
+              id="tab2"
+              class="py-2 px-4 bg-white border-b-4 border-transparent font-semibold focus:outline-none uppercase"
+            >
+              Nutrition & Ingredients
+            </button>
+            <button
+              id="tab3"
+              class="py-2 px-4 bg-white border-b-4 border-transparent font-semibold focus:outline-none"
+            >
+              FAQs
+            </button>
+            <button
+              id="tab4"
+              class="py-2 px-4 bg-white border-b-4 border-transparent font-semibold focus:outline-none uppercase"
+            >
+              Reviews
+            </button>
+          </div>
+        </div>
+        <div id="tabContent" class="mt-4 mx-5">
+          <div id="content1" class="hidden">
+            <div>
+              <h1 class="text-2xl">What Is Collagen Protein?</h1>
+              <p class="py-4">
+                By now, you’ve probably seen the ads and heard people talking
+                about collagen protein—it’s everywhere. But what’s all the buzz
+                about? Is it time for you to jump on the bandwagon? And if
+                you’ve already joined the masses, why should you make the switch
+                to Ageless Multi-Collagen Protein Powder?
+              </p>
+              <p class="py-4">
+                In order to answer these questions, we first have to answer this
+                one: <b>What is collagen?</b>
+              </p>
+              <p class="py-4">
+                Simply put, collagen is the most abundant and arguably the most
+                important protein in the body. In fact, collagen constitutes a
+                whopping 30% of the protein in your body. Aside from water,
+                <b>collagen is the most plentiful substance in your body</b>
+                —pretty crazy, right?
+              </p>
+              <p class="py-4">
+                For example, collagen makes up 70% of the protein in our skin,
+                and it’s one of the primary structural proteins in joints,
+                bones, cartilage, ligaments, tendons, hair, fingernails, the
+                intestinal wall, and more. Collagen is the glue—literally, it
+                comes from the Greek word for glue—that supports, connects, and
+                holds everything together.
+              </p>
+              <p class="py-4">
+                Not surprisingly, healthy levels of collagen are vital to
+                support:
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Smooth, healthy, young-looking skin</li>
+                <li>Strong, healthy fingernails and glossy hair</li>
+                <li>Healthy, supple joints</li>
+                <li>Bone health</li>
+                <li>Healthy digestion and gut health</li>
+                <li>Strong, healthy tendons and ligaments</li>
+              </ul>
+              <p class="py-4">
+                There’s more—including healthy, flexible blood vessels and organ
+                health—but the moral of the story is that collagen is a
+                component of your entire body, and it has a tremendous impact on
+                how you look and feel.
+              </p>
+              <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+              <p class="py-4">
+                When you’re young, your body makes all the collagen it needs.
+                That’s why your skin is firm and glowing, your joints are
+                supple, and your digestive system works like a champ.
+              </p>
+              <p class="py-4">
+                So, what happens as you get older? Your body loses its ability
+                to make collagen, and to make matters worse, collagen might
+                reduce more rapidly thanks to things like smoking, stress,
+                excess sun exposure, physical activity, and diet. For example,
+                consuming sugar, refined carbs, and poor-quality fats (such as
+                industrial produced vegetable oils), which are common in
+                processed foods, can all contribute to collagen depletion.
+              </p>
+              <b class="py-4"
+                >In simple terms, we produce less collagen with age.</b
+              >
+              <p class="py-4">
+                For example, studies show that skin levels of collagen decrease
+                by about 11 – 13% with each passing decade after the age of 20,
+                and by the time folks hit their 80s, collagen levels may be, on
+                average, only one-third of what they were in their 20s.
+              </p>
+              <img
+                class="w-full md:w-6/12"
+                src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                alt=""
+              />
+              <p class="py-4">
+                Over time, this reduction in collagen may contribute to…
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Skin sags and wrinkles</li>
+                <li>Hair gets thinner, and nails lose their strength</li>
+                <li>Joints become stiff and less flexible</li>
+                <li>Recovery from activities like exercise slows</li>
+                <li>Occasional gut-related complaints come out of nowhere</li>
+              </ul>
+              <p class="py-4">
+                That may sound grim, but it’s not all bad news. In fact, there’s
+                GREAT news.
+                <b>
+                  You can ramp up your body’s collagen production by consuming
+                  more collagen protein in your diet.
+                </b>
+              </p>
+              <p class="py-4">
+                Collagen protein is very different from other common protein
+                sources—such as beef, poultry, fish, eggs, dairy, and
+                plants—because it features a unique profile of amino acids, and
+                it is especially rich in glycine, proline, and hydroxyproline,
+                which is found ONLY in collagen protein. Together, these three
+                amino acids account for 40 – 50% of the amino acids in collagen
+                protein, which is 10 – 20 times higher than other common protein
+                sources.
+              </p>
+              <p class="py-4">
+                Why is that important? These are the raw materials the body
+                needs to support collagen production and support healthy levels
+                of collagen. Even more, research shows that consuming a very
+                specific type of collagen protein—known as collagen
+                peptides—trigger the body to make more collagen and produce more
+                hyaluronic acid, which is a lubricating fluid that’s a key
+                component of healthy, hydrated skin and healthy, supple
+                joints.Footnote†
+              </p>
+              <h1 class="text-xl font-bold">
+                Why Do You Need a Collagen Powder?
+              </h1>
+              <p class="py-4">
+                Well, just like us, collagen is the primary structural protein
+                in animals. You’ll find it in their connective tissue, including
+                skin, bones, and cartilage. Unfortunately, we’ve all but
+                abandoned the traditional “nose to tail” way of eating.
+              </p>
+              <p class="py-4">
+                Most of us eat boneless, skinless muscle meat, which provides
+                protein that’s quite a bit different than collagen protein,
+                which has a very specific combination of amino acids and
+                functional properties. We rarely eat bone-in meat, let alone the
+                skin, organ meats, and other connective tissue from land and sea
+                creatures.
+              </p>
+              <p class="py-4">
+                And while bone broth can be a great source of collagen protein,
+                making homemade bone broth takes time to make and clean up—a lot
+                of time. The good news is that you can buy pre-made bone broth
+                that’s pretty darn tasty. However, that can become an expensive
+                habit quite quickly, and let’s face it, most people aren’t
+                interested in sipping a cup of bone broth every single day,
+                which you’d need to do to continuously support healthy levels of
+                collagen.
+              </p>
+            </div>
+          </div>
+          <div id="content2" class="hidden">
+            <div>
+              <h1 class="text-2xl">What Is Collagen Protein?</h1>
+              <p class="py-4">
+                By now, you’ve probably seen the ads and heard people talking
+                about collagen protein—it’s everywhere. But what’s all the buzz
+                about? Is it time for you to jump on the bandwagon? And if
+                you’ve already joined the masses, why should you make the switch
+                to Ageless Multi-Collagen Protein Powder?
+              </p>
+              <p class="py-4">
+                In order to answer these questions, we first have to answer this
+                one: <b>What is collagen?</b>
+              </p>
+              <p class="py-4">
+                Simply put, collagen is the most abundant and arguably the most
+                important protein in the body. In fact, collagen constitutes a
+                whopping 30% of the protein in your body. Aside from water,
+                <b>collagen is the most plentiful substance in your body</b>
+                —pretty crazy, right?
+              </p>
+              <p class="py-4">
+                For example, collagen makes up 70% of the protein in our skin,
+                and it’s one of the primary structural proteins in joints,
+                bones, cartilage, ligaments, tendons, hair, fingernails, the
+                intestinal wall, and more. Collagen is the glue—literally, it
+                comes from the Greek word for glue—that supports, connects, and
+                holds everything together.
+              </p>
+              <p class="py-4">
+                Not surprisingly, healthy levels of collagen are vital to
+                support:
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Smooth, healthy, young-looking skin</li>
+                <li>Strong, healthy fingernails and glossy hair</li>
+                <li>Healthy, supple joints</li>
+                <li>Bone health</li>
+                <li>Healthy digestion and gut health</li>
+                <li>Strong, healthy tendons and ligaments</li>
+              </ul>
+              <p class="py-4">
+                There’s more—including healthy, flexible blood vessels and organ
+                health—but the moral of the story is that collagen is a
+                component of your entire body, and it has a tremendous impact on
+                how you look and feel.
+              </p>
+              <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+              <p class="py-4">
+                When you’re young, your body makes all the collagen it needs.
+                That’s why your skin is firm and glowing, your joints are
+                supple, and your digestive system works like a champ.
+              </p>
+              <p class="py-4">
+                So, what happens as you get older? Your body loses its ability
+                to make collagen, and to make matters worse, collagen might
+                reduce more rapidly thanks to things like smoking, stress,
+                excess sun exposure, physical activity, and diet. For example,
+                consuming sugar, refined carbs, and poor-quality fats (such as
+                industrial produced vegetable oils), which are common in
+                processed foods, can all contribute to collagen depletion.
+              </p>
+              <b class="py-4"
+                >In simple terms, we produce less collagen with age.</b
+              >
+              <p class="py-4">
+                For example, studies show that skin levels of collagen decrease
+                by about 11 – 13% with each passing decade after the age of 20,
+                and by the time folks hit their 80s, collagen levels may be, on
+                average, only one-third of what they were in their 20s.
+              </p>
+              <img
+                class="w-full md:w-6/12"
+                src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                alt=""
+              />
+              <p class="py-4">
+                Over time, this reduction in collagen may contribute to…
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Skin sags and wrinkles</li>
+                <li>Hair gets thinner, and nails lose their strength</li>
+                <li>Joints become stiff and less flexible</li>
+                <li>Recovery from activities like exercise slows</li>
+                <li>Occasional gut-related complaints come out of nowhere</li>
+              </ul>
+              <p class="py-4">
+                That may sound grim, but it’s not all bad news. In fact, there’s
+                GREAT news.
+                <b>
+                  You can ramp up your body’s collagen production by consuming
+                  more collagen protein in your diet.
+                </b>
+              </p>
+              <p class="py-4">
+                Collagen protein is very different from other common protein
+                sources—such as beef, poultry, fish, eggs, dairy, and
+                plants—because it features a unique profile of amino acids, and
+                it is especially rich in glycine, proline, and hydroxyproline,
+                which is found ONLY in collagen protein. Together, these three
+                amino acids account for 40 – 50% of the amino acids in collagen
+                protein, which is 10 – 20 times higher than other common protein
+                sources.
+              </p>
+              <p class="py-4">
+                Why is that important? These are the raw materials the body
+                needs to support collagen production and support healthy levels
+                of collagen. Even more, research shows that consuming a very
+                specific type of collagen protein—known as collagen
+                peptides—trigger the body to make more collagen and produce more
+                hyaluronic acid, which is a lubricating fluid that’s a key
+                component of healthy, hydrated skin and healthy, supple
+                joints.Footnote†
+              </p>
+              <h1 class="text-xl font-bold">
+                Why Do You Need a Collagen Powder?
+              </h1>
+              <p class="py-4">
+                Well, just like us, collagen is the primary structural protein
+                in animals. You’ll find it in their connective tissue, including
+                skin, bones, and cartilage. Unfortunately, we’ve all but
+                abandoned the traditional “nose to tail” way of eating.
+              </p>
+              <p class="py-4">
+                Most of us eat boneless, skinless muscle meat, which provides
+                protein that’s quite a bit different than collagen protein,
+                which has a very specific combination of amino acids and
+                functional properties. We rarely eat bone-in meat, let alone the
+                skin, organ meats, and other connective tissue from land and sea
+                creatures.
+              </p>
+              <p class="py-4">
+                And while bone broth can be a great source of collagen protein,
+                making homemade bone broth takes time to make and clean up—a lot
+                of time. The good news is that you can buy pre-made bone broth
+                that’s pretty darn tasty. However, that can become an expensive
+                habit quite quickly, and let’s face it, most people aren’t
+                interested in sipping a cup of bone broth every single day,
+                which you’d need to do to continuously support healthy levels of
+                collagen.
+              </p>
+            </div>
+          </div>
+          <div id="content3" class="hidden">
+            <div>
+              <h1 class="text-2xl">What Is Collagen Protein?</h1>
+              <p class="py-4">
+                By now, you’ve probably seen the ads and heard people talking
+                about collagen protein—it’s everywhere. But what’s all the buzz
+                about? Is it time for you to jump on the bandwagon? And if
+                you’ve already joined the masses, why should you make the switch
+                to Ageless Multi-Collagen Protein Powder?
+              </p>
+              <p class="py-4">
+                In order to answer these questions, we first have to answer this
+                one: <b>What is collagen?</b>
+              </p>
+              <p class="py-4">
+                Simply put, collagen is the most abundant and arguably the most
+                important protein in the body. In fact, collagen constitutes a
+                whopping 30% of the protein in your body. Aside from water,
+                <b>collagen is the most plentiful substance in your body</b>
+                —pretty crazy, right?
+              </p>
+              <p class="py-4">
+                For example, collagen makes up 70% of the protein in our skin,
+                and it’s one of the primary structural proteins in joints,
+                bones, cartilage, ligaments, tendons, hair, fingernails, the
+                intestinal wall, and more. Collagen is the glue—literally, it
+                comes from the Greek word for glue—that supports, connects, and
+                holds everything together.
+              </p>
+              <p class="py-4">
+                Not surprisingly, healthy levels of collagen are vital to
+                support:
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Smooth, healthy, young-looking skin</li>
+                <li>Strong, healthy fingernails and glossy hair</li>
+                <li>Healthy, supple joints</li>
+                <li>Bone health</li>
+                <li>Healthy digestion and gut health</li>
+                <li>Strong, healthy tendons and ligaments</li>
+              </ul>
+              <p class="py-4">
+                There’s more—including healthy, flexible blood vessels and organ
+                health—but the moral of the story is that collagen is a
+                component of your entire body, and it has a tremendous impact on
+                how you look and feel.
+              </p>
+              <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+              <p class="py-4">
+                When you’re young, your body makes all the collagen it needs.
+                That’s why your skin is firm and glowing, your joints are
+                supple, and your digestive system works like a champ.
+              </p>
+              <p class="py-4">
+                So, what happens as you get older? Your body loses its ability
+                to make collagen, and to make matters worse, collagen might
+                reduce more rapidly thanks to things like smoking, stress,
+                excess sun exposure, physical activity, and diet. For example,
+                consuming sugar, refined carbs, and poor-quality fats (such as
+                industrial produced vegetable oils), which are common in
+                processed foods, can all contribute to collagen depletion.
+              </p>
+              <b class="py-4"
+                >In simple terms, we produce less collagen with age.</b
+              >
+              <p class="py-4">
+                For example, studies show that skin levels of collagen decrease
+                by about 11 – 13% with each passing decade after the age of 20,
+                and by the time folks hit their 80s, collagen levels may be, on
+                average, only one-third of what they were in their 20s.
+              </p>
+              <img
+                class="w-full md:w-6/12"
+                src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                alt=""
+              />
+              <p class="py-4">
+                Over time, this reduction in collagen may contribute to…
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Skin sags and wrinkles</li>
+                <li>Hair gets thinner, and nails lose their strength</li>
+                <li>Joints become stiff and less flexible</li>
+                <li>Recovery from activities like exercise slows</li>
+                <li>Occasional gut-related complaints come out of nowhere</li>
+              </ul>
+              <p class="py-4">
+                That may sound grim, but it’s not all bad news. In fact, there’s
+                GREAT news.
+                <b>
+                  You can ramp up your body’s collagen production by consuming
+                  more collagen protein in your diet.
+                </b>
+              </p>
+              <p class="py-4">
+                Collagen protein is very different from other common protein
+                sources—such as beef, poultry, fish, eggs, dairy, and
+                plants—because it features a unique profile of amino acids, and
+                it is especially rich in glycine, proline, and hydroxyproline,
+                which is found ONLY in collagen protein. Together, these three
+                amino acids account for 40 – 50% of the amino acids in collagen
+                protein, which is 10 – 20 times higher than other common protein
+                sources.
+              </p>
+              <p class="py-4">
+                Why is that important? These are the raw materials the body
+                needs to support collagen production and support healthy levels
+                of collagen. Even more, research shows that consuming a very
+                specific type of collagen protein—known as collagen
+                peptides—trigger the body to make more collagen and produce more
+                hyaluronic acid, which is a lubricating fluid that’s a key
+                component of healthy, hydrated skin and healthy, supple
+                joints.Footnote†
+              </p>
+              <h1 class="text-xl font-bold">
+                Why Do You Need a Collagen Powder?
+              </h1>
+              <p class="py-4">
+                Well, just like us, collagen is the primary structural protein
+                in animals. You’ll find it in their connective tissue, including
+                skin, bones, and cartilage. Unfortunately, we’ve all but
+                abandoned the traditional “nose to tail” way of eating.
+              </p>
+              <p class="py-4">
+                Most of us eat boneless, skinless muscle meat, which provides
+                protein that’s quite a bit different than collagen protein,
+                which has a very specific combination of amino acids and
+                functional properties. We rarely eat bone-in meat, let alone the
+                skin, organ meats, and other connective tissue from land and sea
+                creatures.
+              </p>
+              <p class="py-4">
+                And while bone broth can be a great source of collagen protein,
+                making homemade bone broth takes time to make and clean up—a lot
+                of time. The good news is that you can buy pre-made bone broth
+                that’s pretty darn tasty. However, that can become an expensive
+                habit quite quickly, and let’s face it, most people aren’t
+                interested in sipping a cup of bone broth every single day,
+                which you’d need to do to continuously support healthy levels of
+                collagen.
+              </p>
+            </div>
+          </div>
+          <div id="content4" class="hidden">
+            <div>
+              <h1 class="text-2xl">What Is Collagen Protein?</h1>
+              <p class="py-4">
+                By now, you’ve probably seen the ads and heard people talking
+                about collagen protein—it’s everywhere. But what’s all the buzz
+                about? Is it time for you to jump on the bandwagon? And if
+                you’ve already joined the masses, why should you make the switch
+                to Ageless Multi-Collagen Protein Powder?
+              </p>
+              <p class="py-4">
+                In order to answer these questions, we first have to answer this
+                one: <b>What is collagen?</b>
+              </p>
+              <p class="py-4">
+                Simply put, collagen is the most abundant and arguably the most
+                important protein in the body. In fact, collagen constitutes a
+                whopping 30% of the protein in your body. Aside from water,
+                <b>collagen is the most plentiful substance in your body</b>
+                —pretty crazy, right?
+              </p>
+              <p class="py-4">
+                For example, collagen makes up 70% of the protein in our skin,
+                and it’s one of the primary structural proteins in joints,
+                bones, cartilage, ligaments, tendons, hair, fingernails, the
+                intestinal wall, and more. Collagen is the glue—literally, it
+                comes from the Greek word for glue—that supports, connects, and
+                holds everything together.
+              </p>
+              <p class="py-4">
+                Not surprisingly, healthy levels of collagen are vital to
+                support:
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Smooth, healthy, young-looking skin</li>
+                <li>Strong, healthy fingernails and glossy hair</li>
+                <li>Healthy, supple joints</li>
+                <li>Bone health</li>
+                <li>Healthy digestion and gut health</li>
+                <li>Strong, healthy tendons and ligaments</li>
+              </ul>
+              <p class="py-4">
+                There’s more—including healthy, flexible blood vessels and organ
+                health—but the moral of the story is that collagen is a
+                component of your entire body, and it has a tremendous impact on
+                how you look and feel.
+              </p>
+              <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+              <p class="py-4">
+                When you’re young, your body makes all the collagen it needs.
+                That’s why your skin is firm and glowing, your joints are
+                supple, and your digestive system works like a champ.
+              </p>
+              <p class="py-4">
+                So, what happens as you get older? Your body loses its ability
+                to make collagen, and to make matters worse, collagen might
+                reduce more rapidly thanks to things like smoking, stress,
+                excess sun exposure, physical activity, and diet. For example,
+                consuming sugar, refined carbs, and poor-quality fats (such as
+                industrial produced vegetable oils), which are common in
+                processed foods, can all contribute to collagen depletion.
+              </p>
+              <b class="py-4"
+                >In simple terms, we produce less collagen with age.</b
+              >
+              <p class="py-4">
+                For example, studies show that skin levels of collagen decrease
+                by about 11 – 13% with each passing decade after the age of 20,
+                and by the time folks hit their 80s, collagen levels may be, on
+                average, only one-third of what they were in their 20s.
+              </p>
+              <img
+                class="w-full md:w-6/12"
+                src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                alt=""
+              />
+              <p class="py-4">
+                Over time, this reduction in collagen may contribute to…
+              </p>
+              <ul class="list-disc list-inside">
+                <li>Skin sags and wrinkles</li>
+                <li>Hair gets thinner, and nails lose their strength</li>
+                <li>Joints become stiff and less flexible</li>
+                <li>Recovery from activities like exercise slows</li>
+                <li>Occasional gut-related complaints come out of nowhere</li>
+              </ul>
+              <p class="py-4">
+                That may sound grim, but it’s not all bad news. In fact, there’s
+                GREAT news.
+                <b>
+                  You can ramp up your body’s collagen production by consuming
+                  more collagen protein in your diet.
+                </b>
+              </p>
+              <p class="py-4">
+                Collagen protein is very different from other common protein
+                sources—such as beef, poultry, fish, eggs, dairy, and
+                plants—because it features a unique profile of amino acids, and
+                it is especially rich in glycine, proline, and hydroxyproline,
+                which is found ONLY in collagen protein. Together, these three
+                amino acids account for 40 – 50% of the amino acids in collagen
+                protein, which is 10 – 20 times higher than other common protein
+                sources.
+              </p>
+              <p class="py-4">
+                Why is that important? These are the raw materials the body
+                needs to support collagen production and support healthy levels
+                of collagen. Even more, research shows that consuming a very
+                specific type of collagen protein—known as collagen
+                peptides—trigger the body to make more collagen and produce more
+                hyaluronic acid, which is a lubricating fluid that’s a key
+                component of healthy, hydrated skin and healthy, supple
+                joints.Footnote†
+              </p>
+              <h1 class="text-xl font-bold">
+                Why Do You Need a Collagen Powder?
+              </h1>
+              <p class="py-4">
+                Well, just like us, collagen is the primary structural protein
+                in animals. You’ll find it in their connective tissue, including
+                skin, bones, and cartilage. Unfortunately, we’ve all but
+                abandoned the traditional “nose to tail” way of eating.
+              </p>
+              <p class="py-4">
+                Most of us eat boneless, skinless muscle meat, which provides
+                protein that’s quite a bit different than collagen protein,
+                which has a very specific combination of amino acids and
+                functional properties. We rarely eat bone-in meat, let alone the
+                skin, organ meats, and other connective tissue from land and sea
+                creatures.
+              </p>
+              <p class="py-4">
+                And while bone broth can be a great source of collagen protein,
+                making homemade bone broth takes time to make and clean up—a lot
+                of time. The good news is that you can buy pre-made bone broth
+                that’s pretty darn tasty. However, that can become an expensive
+                habit quite quickly, and let’s face it, most people aren’t
+                interested in sipping a cup of bone broth every single day,
+                which you’d need to do to continuously support healthy levels of
+                collagen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block md:hidden">
+        <div class="space-y-2">
+          <div id="accordian1" class="bg-white rounded-md shadow-md">
+            <button
+              class="text-center w-full py-5 border-b-2 border-blue-600 uppercase text-blue-600 font-bold"
+            >
+              Health Benefits
+            </button>
+            <div class="p-6 hidden border-b-2 border-blue-600">
+              <div>
+                <h1 class="text-2xl">What Is Collagen Protein?</h1>
+                <p class="py-4">
+                  By now, you’ve probably seen the ads and heard people talking
+                  about collagen protein—it’s everywhere. But what’s all the
+                  buzz about? Is it time for you to jump on the bandwagon? And
+                  if you’ve already joined the masses, why should you make the
+                  switch to Ageless Multi-Collagen Protein Powder?
+                </p>
+                <p class="py-4">
+                  In order to answer these questions, we first have to answer
+                  this one: <b>What is collagen?</b>
+                </p>
+                <p class="py-4">
+                  Simply put, collagen is the most abundant and arguably the
+                  most important protein in the body. In fact, collagen
+                  constitutes a whopping 30% of the protein in your body. Aside
+                  from water,
+                  <b>collagen is the most plentiful substance in your body</b>
+                  —pretty crazy, right?
+                </p>
+                <p class="py-4">
+                  For example, collagen makes up 70% of the protein in our skin,
+                  and it’s one of the primary structural proteins in joints,
+                  bones, cartilage, ligaments, tendons, hair, fingernails, the
+                  intestinal wall, and more. Collagen is the glue—literally, it
+                  comes from the Greek word for glue—that supports, connects,
+                  and holds everything together.
+                </p>
+                <p class="py-4">
+                  Not surprisingly, healthy levels of collagen are vital to
+                  support:
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Smooth, healthy, young-looking skin</li>
+                  <li>Strong, healthy fingernails and glossy hair</li>
+                  <li>Healthy, supple joints</li>
+                  <li>Bone health</li>
+                  <li>Healthy digestion and gut health</li>
+                  <li>Strong, healthy tendons and ligaments</li>
+                </ul>
+                <p class="py-4">
+                  There’s more—including healthy, flexible blood vessels and
+                  organ health—but the moral of the story is that collagen is a
+                  component of your entire body, and it has a tremendous impact
+                  on how you look and feel.
+                </p>
+                <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+                <p class="py-4">
+                  When you’re young, your body makes all the collagen it needs.
+                  That’s why your skin is firm and glowing, your joints are
+                  supple, and your digestive system works like a champ.
+                </p>
+                <p class="py-4">
+                  So, what happens as you get older? Your body loses its ability
+                  to make collagen, and to make matters worse, collagen might
+                  reduce more rapidly thanks to things like smoking, stress,
+                  excess sun exposure, physical activity, and diet. For example,
+                  consuming sugar, refined carbs, and poor-quality fats (such as
+                  industrial produced vegetable oils), which are common in
+                  processed foods, can all contribute to collagen depletion.
+                </p>
+                <b class="py-4"
+                  >In simple terms, we produce less collagen with age.</b
+                >
+                <p class="py-4">
+                  For example, studies show that skin levels of collagen
+                  decrease by about 11 – 13% with each passing decade after the
+                  age of 20, and by the time folks hit their 80s, collagen
+                  levels may be, on average, only one-third of what they were in
+                  their 20s.
+                </p>
+                <img
+                  class="w-full md:w-6/12"
+                  src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                  alt=""
+                />
+                <p class="py-4">
+                  Over time, this reduction in collagen may contribute to…
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Skin sags and wrinkles</li>
+                  <li>Hair gets thinner, and nails lose their strength</li>
+                  <li>Joints become stiff and less flexible</li>
+                  <li>Recovery from activities like exercise slows</li>
+                  <li>Occasional gut-related complaints come out of nowhere</li>
+                </ul>
+                <p class="py-4">
+                  That may sound grim, but it’s not all bad news. In fact,
+                  there’s GREAT news.
+                  <b>
+                    You can ramp up your body’s collagen production by consuming
+                    more collagen protein in your diet.
+                  </b>
+                </p>
+                <p class="py-4">
+                  Collagen protein is very different from other common protein
+                  sources—such as beef, poultry, fish, eggs, dairy, and
+                  plants—because it features a unique profile of amino acids,
+                  and it is especially rich in glycine, proline, and
+                  hydroxyproline, which is found ONLY in collagen protein.
+                  Together, these three amino acids account for 40 – 50% of the
+                  amino acids in collagen protein, which is 10 – 20 times higher
+                  than other common protein sources.
+                </p>
+                <p class="py-4">
+                  Why is that important? These are the raw materials the body
+                  needs to support collagen production and support healthy
+                  levels of collagen. Even more, research shows that consuming a
+                  very specific type of collagen protein—known as collagen
+                  peptides—trigger the body to make more collagen and produce
+                  more hyaluronic acid, which is a lubricating fluid that’s a
+                  key component of healthy, hydrated skin and healthy, supple
+                  joints.Footnote†
+                </p>
+                <h1 class="text-xl font-bold">
+                  Why Do You Need a Collagen Powder?
+                </h1>
+                <p class="py-4">
+                  Well, just like us, collagen is the primary structural protein
+                  in animals. You’ll find it in their connective tissue,
+                  including skin, bones, and cartilage. Unfortunately, we’ve all
+                  but abandoned the traditional “nose to tail” way of eating.
+                </p>
+                <p class="py-4">
+                  Most of us eat boneless, skinless muscle meat, which provides
+                  protein that’s quite a bit different than collagen protein,
+                  which has a very specific combination of amino acids and
+                  functional properties. We rarely eat bone-in meat, let alone
+                  the skin, organ meats, and other connective tissue from land
+                  and sea creatures.
+                </p>
+                <p class="py-4">
+                  And while bone broth can be a great source of collagen
+                  protein, making homemade bone broth takes time to make and
+                  clean up—a lot of time. The good news is that you can buy
+                  pre-made bone broth that’s pretty darn tasty. However, that
+                  can become an expensive habit quite quickly, and let’s face
+                  it, most people aren’t interested in sipping a cup of bone
+                  broth every single day, which you’d need to do to continuously
+                  support healthy levels of collagen.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="accordian2" class="bg-white rounded-md shadow-md">
+            <button
+              class="text-center w-full py-5 border-b-2 border-blue-600 uppercase text-blue-600 font-bold"
+            >
+              Nutrition & ingredients
+            </button>
+            <div class="p-6 hidden border-b-2 border-blue-600">
+              <div>
+                <h1 class="text-2xl">What Is Collagen Protein?</h1>
+                <p class="py-4">
+                  By now, you’ve probably seen the ads and heard people talking
+                  about collagen protein—it’s everywhere. But what’s all the
+                  buzz about? Is it time for you to jump on the bandwagon? And
+                  if you’ve already joined the masses, why should you make the
+                  switch to Ageless Multi-Collagen Protein Powder?
+                </p>
+                <p class="py-4">
+                  In order to answer these questions, we first have to answer
+                  this one: <b>What is collagen?</b>
+                </p>
+                <p class="py-4">
+                  Simply put, collagen is the most abundant and arguably the
+                  most important protein in the body. In fact, collagen
+                  constitutes a whopping 30% of the protein in your body. Aside
+                  from water,
+                  <b>collagen is the most plentiful substance in your body</b>
+                  —pretty crazy, right?
+                </p>
+                <p class="py-4">
+                  For example, collagen makes up 70% of the protein in our skin,
+                  and it’s one of the primary structural proteins in joints,
+                  bones, cartilage, ligaments, tendons, hair, fingernails, the
+                  intestinal wall, and more. Collagen is the glue—literally, it
+                  comes from the Greek word for glue—that supports, connects,
+                  and holds everything together.
+                </p>
+                <p class="py-4">
+                  Not surprisingly, healthy levels of collagen are vital to
+                  support:
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Smooth, healthy, young-looking skin</li>
+                  <li>Strong, healthy fingernails and glossy hair</li>
+                  <li>Healthy, supple joints</li>
+                  <li>Bone health</li>
+                  <li>Healthy digestion and gut health</li>
+                  <li>Strong, healthy tendons and ligaments</li>
+                </ul>
+                <p class="py-4">
+                  There’s more—including healthy, flexible blood vessels and
+                  organ health—but the moral of the story is that collagen is a
+                  component of your entire body, and it has a tremendous impact
+                  on how you look and feel.
+                </p>
+                <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+                <p class="py-4">
+                  When you’re young, your body makes all the collagen it needs.
+                  That’s why your skin is firm and glowing, your joints are
+                  supple, and your digestive system works like a champ.
+                </p>
+                <p class="py-4">
+                  So, what happens as you get older? Your body loses its ability
+                  to make collagen, and to make matters worse, collagen might
+                  reduce more rapidly thanks to things like smoking, stress,
+                  excess sun exposure, physical activity, and diet. For example,
+                  consuming sugar, refined carbs, and poor-quality fats (such as
+                  industrial produced vegetable oils), which are common in
+                  processed foods, can all contribute to collagen depletion.
+                </p>
+                <b class="py-4"
+                  >In simple terms, we produce less collagen with age.</b
+                >
+                <p class="py-4">
+                  For example, studies show that skin levels of collagen
+                  decrease by about 11 – 13% with each passing decade after the
+                  age of 20, and by the time folks hit their 80s, collagen
+                  levels may be, on average, only one-third of what they were in
+                  their 20s.
+                </p>
+                <img
+                  class="w-full md:w-6/12"
+                  src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                  alt=""
+                />
+                <p class="py-4">
+                  Over time, this reduction in collagen may contribute to…
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Skin sags and wrinkles</li>
+                  <li>Hair gets thinner, and nails lose their strength</li>
+                  <li>Joints become stiff and less flexible</li>
+                  <li>Recovery from activities like exercise slows</li>
+                  <li>Occasional gut-related complaints come out of nowhere</li>
+                </ul>
+                <p class="py-4">
+                  That may sound grim, but it’s not all bad news. In fact,
+                  there’s GREAT news.
+                  <b>
+                    You can ramp up your body’s collagen production by consuming
+                    more collagen protein in your diet.
+                  </b>
+                </p>
+                <p class="py-4">
+                  Collagen protein is very different from other common protein
+                  sources—such as beef, poultry, fish, eggs, dairy, and
+                  plants—because it features a unique profile of amino acids,
+                  and it is especially rich in glycine, proline, and
+                  hydroxyproline, which is found ONLY in collagen protein.
+                  Together, these three amino acids account for 40 – 50% of the
+                  amino acids in collagen protein, which is 10 – 20 times higher
+                  than other common protein sources.
+                </p>
+                <p class="py-4">
+                  Why is that important? These are the raw materials the body
+                  needs to support collagen production and support healthy
+                  levels of collagen. Even more, research shows that consuming a
+                  very specific type of collagen protein—known as collagen
+                  peptides—trigger the body to make more collagen and produce
+                  more hyaluronic acid, which is a lubricating fluid that’s a
+                  key component of healthy, hydrated skin and healthy, supple
+                  joints.Footnote†
+                </p>
+                <h1 class="text-xl font-bold">
+                  Why Do You Need a Collagen Powder?
+                </h1>
+                <p class="py-4">
+                  Well, just like us, collagen is the primary structural protein
+                  in animals. You’ll find it in their connective tissue,
+                  including skin, bones, and cartilage. Unfortunately, we’ve all
+                  but abandoned the traditional “nose to tail” way of eating.
+                </p>
+                <p class="py-4">
+                  Most of us eat boneless, skinless muscle meat, which provides
+                  protein that’s quite a bit different than collagen protein,
+                  which has a very specific combination of amino acids and
+                  functional properties. We rarely eat bone-in meat, let alone
+                  the skin, organ meats, and other connective tissue from land
+                  and sea creatures.
+                </p>
+                <p class="py-4">
+                  And while bone broth can be a great source of collagen
+                  protein, making homemade bone broth takes time to make and
+                  clean up—a lot of time. The good news is that you can buy
+                  pre-made bone broth that’s pretty darn tasty. However, that
+                  can become an expensive habit quite quickly, and let’s face
+                  it, most people aren’t interested in sipping a cup of bone
+                  broth every single day, which you’d need to do to continuously
+                  support healthy levels of collagen.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="accordian3" class="bg-white rounded-md shadow-md">
+            <button
+              class="text-center w-full py-5 border-b-2 border-blue-600 text-blue-600 font-bold"
+            >
+              FAQs
+            </button>
+            <div class="p-6 hidden border-b-2 border-blue-600">
+              <div>
+                <h1 class="text-2xl">What Is Collagen Protein?</h1>
+                <p class="py-4">
+                  By now, you’ve probably seen the ads and heard people talking
+                  about collagen protein—it’s everywhere. But what’s all the
+                  buzz about? Is it time for you to jump on the bandwagon? And
+                  if you’ve already joined the masses, why should you make the
+                  switch to Ageless Multi-Collagen Protein Powder?
+                </p>
+                <p class="py-4">
+                  In order to answer these questions, we first have to answer
+                  this one: <b>What is collagen?</b>
+                </p>
+                <p class="py-4">
+                  Simply put, collagen is the most abundant and arguably the
+                  most important protein in the body. In fact, collagen
+                  constitutes a whopping 30% of the protein in your body. Aside
+                  from water,
+                  <b>collagen is the most plentiful substance in your body</b>
+                  —pretty crazy, right?
+                </p>
+                <p class="py-4">
+                  For example, collagen makes up 70% of the protein in our skin,
+                  and it’s one of the primary structural proteins in joints,
+                  bones, cartilage, ligaments, tendons, hair, fingernails, the
+                  intestinal wall, and more. Collagen is the glue—literally, it
+                  comes from the Greek word for glue—that supports, connects,
+                  and holds everything together.
+                </p>
+                <p class="py-4">
+                  Not surprisingly, healthy levels of collagen are vital to
+                  support:
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Smooth, healthy, young-looking skin</li>
+                  <li>Strong, healthy fingernails and glossy hair</li>
+                  <li>Healthy, supple joints</li>
+                  <li>Bone health</li>
+                  <li>Healthy digestion and gut health</li>
+                  <li>Strong, healthy tendons and ligaments</li>
+                </ul>
+                <p class="py-4">
+                  There’s more—including healthy, flexible blood vessels and
+                  organ health—but the moral of the story is that collagen is a
+                  component of your entire body, and it has a tremendous impact
+                  on how you look and feel.
+                </p>
+                <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+                <p class="py-4">
+                  When you’re young, your body makes all the collagen it needs.
+                  That’s why your skin is firm and glowing, your joints are
+                  supple, and your digestive system works like a champ.
+                </p>
+                <p class="py-4">
+                  So, what happens as you get older? Your body loses its ability
+                  to make collagen, and to make matters worse, collagen might
+                  reduce more rapidly thanks to things like smoking, stress,
+                  excess sun exposure, physical activity, and diet. For example,
+                  consuming sugar, refined carbs, and poor-quality fats (such as
+                  industrial produced vegetable oils), which are common in
+                  processed foods, can all contribute to collagen depletion.
+                </p>
+                <b class="py-4"
+                  >In simple terms, we produce less collagen with age.</b
+                >
+                <p class="py-4">
+                  For example, studies show that skin levels of collagen
+                  decrease by about 11 – 13% with each passing decade after the
+                  age of 20, and by the time folks hit their 80s, collagen
+                  levels may be, on average, only one-third of what they were in
+                  their 20s.
+                </p>
+                <img
+                  class="w-full md:w-6/12"
+                  src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                  alt=""
+                />
+                <p class="py-4">
+                  Over time, this reduction in collagen may contribute to…
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Skin sags and wrinkles</li>
+                  <li>Hair gets thinner, and nails lose their strength</li>
+                  <li>Joints become stiff and less flexible</li>
+                  <li>Recovery from activities like exercise slows</li>
+                  <li>Occasional gut-related complaints come out of nowhere</li>
+                </ul>
+                <p class="py-4">
+                  That may sound grim, but it’s not all bad news. In fact,
+                  there’s GREAT news.
+                  <b>
+                    You can ramp up your body’s collagen production by consuming
+                    more collagen protein in your diet.
+                  </b>
+                </p>
+                <p class="py-4">
+                  Collagen protein is very different from other common protein
+                  sources—such as beef, poultry, fish, eggs, dairy, and
+                  plants—because it features a unique profile of amino acids,
+                  and it is especially rich in glycine, proline, and
+                  hydroxyproline, which is found ONLY in collagen protein.
+                  Together, these three amino acids account for 40 – 50% of the
+                  amino acids in collagen protein, which is 10 – 20 times higher
+                  than other common protein sources.
+                </p>
+                <p class="py-4">
+                  Why is that important? These are the raw materials the body
+                  needs to support collagen production and support healthy
+                  levels of collagen. Even more, research shows that consuming a
+                  very specific type of collagen protein—known as collagen
+                  peptides—trigger the body to make more collagen and produce
+                  more hyaluronic acid, which is a lubricating fluid that’s a
+                  key component of healthy, hydrated skin and healthy, supple
+                  joints.Footnote†
+                </p>
+                <h1 class="text-xl font-bold">
+                  Why Do You Need a Collagen Powder?
+                </h1>
+                <p class="py-4">
+                  Well, just like us, collagen is the primary structural protein
+                  in animals. You’ll find it in their connective tissue,
+                  including skin, bones, and cartilage. Unfortunately, we’ve all
+                  but abandoned the traditional “nose to tail” way of eating.
+                </p>
+                <p class="py-4">
+                  Most of us eat boneless, skinless muscle meat, which provides
+                  protein that’s quite a bit different than collagen protein,
+                  which has a very specific combination of amino acids and
+                  functional properties. We rarely eat bone-in meat, let alone
+                  the skin, organ meats, and other connective tissue from land
+                  and sea creatures.
+                </p>
+                <p class="py-4">
+                  And while bone broth can be a great source of collagen
+                  protein, making homemade bone broth takes time to make and
+                  clean up—a lot of time. The good news is that you can buy
+                  pre-made bone broth that’s pretty darn tasty. However, that
+                  can become an expensive habit quite quickly, and let’s face
+                  it, most people aren’t interested in sipping a cup of bone
+                  broth every single day, which you’d need to do to continuously
+                  support healthy levels of collagen.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="accordian4" class="bg-white rounded-md shadow-md">
+            <button
+              class="text-center w-full py-5 border-b-2 border-blue-600 uppercase text-blue-600 font-bold"
+            >
+              review
+            </button>
+            <div class="p-6 hidden border-b-2 border-blue-600">
+              <div>
+                <h1 class="text-2xl">What Is Collagen Protein?</h1>
+                <p class="py-4">
+                  By now, you’ve probably seen the ads and heard people talking
+                  about collagen protein—it’s everywhere. But what’s all the
+                  buzz about? Is it time for you to jump on the bandwagon? And
+                  if you’ve already joined the masses, why should you make the
+                  switch to Ageless Multi-Collagen Protein Powder?
+                </p>
+                <p class="py-4">
+                  In order to answer these questions, we first have to answer
+                  this one: <b>What is collagen?</b>
+                </p>
+                <p class="py-4">
+                  Simply put, collagen is the most abundant and arguably the
+                  most important protein in the body. In fact, collagen
+                  constitutes a whopping 30% of the protein in your body. Aside
+                  from water,
+                  <b>collagen is the most plentiful substance in your body</b>
+                  —pretty crazy, right?
+                </p>
+                <p class="py-4">
+                  For example, collagen makes up 70% of the protein in our skin,
+                  and it’s one of the primary structural proteins in joints,
+                  bones, cartilage, ligaments, tendons, hair, fingernails, the
+                  intestinal wall, and more. Collagen is the glue—literally, it
+                  comes from the Greek word for glue—that supports, connects,
+                  and holds everything together.
+                </p>
+                <p class="py-4">
+                  Not surprisingly, healthy levels of collagen are vital to
+                  support:
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Smooth, healthy, young-looking skin</li>
+                  <li>Strong, healthy fingernails and glossy hair</li>
+                  <li>Healthy, supple joints</li>
+                  <li>Bone health</li>
+                  <li>Healthy digestion and gut health</li>
+                  <li>Strong, healthy tendons and ligaments</li>
+                </ul>
+                <p class="py-4">
+                  There’s more—including healthy, flexible blood vessels and
+                  organ health—but the moral of the story is that collagen is a
+                  component of your entire body, and it has a tremendous impact
+                  on how you look and feel.
+                </p>
+                <h1 class="text-2xl">Why Do You Need a Collagen Powder?</h1>
+                <p class="py-4">
+                  When you’re young, your body makes all the collagen it needs.
+                  That’s why your skin is firm and glowing, your joints are
+                  supple, and your digestive system works like a champ.
+                </p>
+                <p class="py-4">
+                  So, what happens as you get older? Your body loses its ability
+                  to make collagen, and to make matters worse, collagen might
+                  reduce more rapidly thanks to things like smoking, stress,
+                  excess sun exposure, physical activity, and diet. For example,
+                  consuming sugar, refined carbs, and poor-quality fats (such as
+                  industrial produced vegetable oils), which are common in
+                  processed foods, can all contribute to collagen depletion.
+                </p>
+                <b class="py-4"
+                  >In simple terms, we produce less collagen with age.</b
+                >
+                <p class="py-4">
+                  For example, studies show that skin levels of collagen
+                  decrease by about 11 – 13% with each passing decade after the
+                  age of 20, and by the time folks hit their 80s, collagen
+                  levels may be, on average, only one-third of what they were in
+                  their 20s.
+                </p>
+                <img
+                  class="w-full md:w-6/12"
+                  src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Ageless_Collagen_Graphic.jpg?9115"
+                  alt=""
+                />
+                <p class="py-4">
+                  Over time, this reduction in collagen may contribute to…
+                </p>
+                <ul class="list-disc list-inside">
+                  <li>Skin sags and wrinkles</li>
+                  <li>Hair gets thinner, and nails lose their strength</li>
+                  <li>Joints become stiff and less flexible</li>
+                  <li>Recovery from activities like exercise slows</li>
+                  <li>Occasional gut-related complaints come out of nowhere</li>
+                </ul>
+                <p class="py-4">
+                  That may sound grim, but it’s not all bad news. In fact,
+                  there’s GREAT news.
+                  <b>
+                    You can ramp up your body’s collagen production by consuming
+                    more collagen protein in your diet.
+                  </b>
+                </p>
+                <p class="py-4">
+                  Collagen protein is very different from other common protein
+                  sources—such as beef, poultry, fish, eggs, dairy, and
+                  plants—because it features a unique profile of amino acids,
+                  and it is especially rich in glycine, proline, and
+                  hydroxyproline, which is found ONLY in collagen protein.
+                  Together, these three amino acids account for 40 – 50% of the
+                  amino acids in collagen protein, which is 10 – 20 times higher
+                  than other common protein sources.
+                </p>
+                <p class="py-4">
+                  Why is that important? These are the raw materials the body
+                  needs to support collagen production and support healthy
+                  levels of collagen. Even more, research shows that consuming a
+                  very specific type of collagen protein—known as collagen
+                  peptides—trigger the body to make more collagen and produce
+                  more hyaluronic acid, which is a lubricating fluid that’s a
+                  key component of healthy, hydrated skin and healthy, supple
+                  joints.Footnote†
+                </p>
+                <h1 class="text-xl font-bold">
+                  Why Do You Need a Collagen Powder?
+                </h1>
+                <p class="py-4">
+                  Well, just like us, collagen is the primary structural protein
+                  in animals. You’ll find it in their connective tissue,
+                  including skin, bones, and cartilage. Unfortunately, we’ve all
+                  but abandoned the traditional “nose to tail” way of eating.
+                </p>
+                <p class="py-4">
+                  Most of us eat boneless, skinless muscle meat, which provides
+                  protein that’s quite a bit different than collagen protein,
+                  which has a very specific combination of amino acids and
+                  functional properties. We rarely eat bone-in meat, let alone
+                  the skin, organ meats, and other connective tissue from land
+                  and sea creatures.
+                </p>
+                <p class="py-4">
+                  And while bone broth can be a great source of collagen
+                  protein, making homemade bone broth takes time to make and
+                  clean up—a lot of time. The good news is that you can buy
+                  pre-made bone broth that’s pretty darn tasty. However, that
+                  can become an expensive habit quite quickly, and let’s face
+                  it, most people aren’t interested in sipping a cup of bone
+                  broth every single day, which you’d need to do to continuously
+                  support healthy levels of collagen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 px-5">
+      <h1 class="text-2xl text-center text-blue-600 font-bold">
+        PEOPLE ALSO VIEWED
+      </h1>
+
+      <div class="flex overflow-x-auto hide-scrollbar">
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+        <div class="flex-shrink-0 w-56 cursor-pointer m-5">
+          <img
+            class="hover:opacity-50"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/omegakrill-pdp_607ac21d-bcda-4902-8558-15c427f70c0c_406x406.png?v=1637684059"
+            alt=""
+          />
+          <p class="line-clamp-1 text-blue-600 pt-2">
+            OmegaKrill™ — Pure & Potent
+          </p>
+          <p class="font-bold text-center pt-10">$49.00</p>
+          <button class="bg-green-500 text-white w-full py-2 py-3">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-gray-200 flex justify-around py-5 flex-col md:flex-row">
+        <p class="font-semibold text-sm mx-10">
+          40% SAVINGS AND FREE SHIPPING ON ALL SUBSCRIPTIONS
+        </p>
+        <p class="font-semibold text-sm mx-10">
+          60-DAY MONEY BACK GUARANTEE ON ALL PURCHASES
+        </p>
+        <p class="font-semibold text-sm mx-10">
+          OUR SUPPORT HELPS KIDS ACCESS HEALTHY MEALS
+        </p>
+        <p class="font-semibold text-sm mx-10">
+          PROTECTED BY 100% SECURED SSL ENCRYPTED CONNECTION
+        </p>
+      </div>
+      <div class="bg-green-600 py-2">
+        <p class="text-white text-center">
+          <b>CONTACT US:</b> (800) 766-5086 MON – FRI 9AM – 6PM ET
+        </p>
+      </div>
+      <div class="bg-blue-600 text-white pt-5 pb-28">
+        <div
+          class="text-center gap-5 flex flex-col md:flex-row md:justify-evenly my-5 md:text-left"
+        >
+          <div>
+            <h1 class="font-bold">CUSTOMER SUPPORT</h1>
+            <ul>
+              <li>Purchase History</li>
+              <li>Manage Subscriptions</li>
+              <li>Track My Order</li>
+              <li>Shipping Policies</li>
+              <li>Return Policy</li>
+              <li>Forgot Password</li>
+              <li>Create Account</li>
+              <li>Customer Support</li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="font-bold">CUSTOMER SUPPORT</h1>
+            <ul>
+              <li>Purchase History</li>
+              <li>Manage Subscriptions</li>
+              <li>Track My Order</li>
+              <li>Shipping Policies</li>
+              <li>Return Policy</li>
+              <li>Forgot Password</li>
+              <li>Create Account</li>
+              <li>Customer Support</li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="font-bold">CUSTOMER SUPPORT</h1>
+            <ul>
+              <li>Purchase History</li>
+              <li>Manage Subscriptions</li>
+              <li>Track My Order</li>
+              <li>Shipping Policies</li>
+              <li>Return Policy</li>
+              <li>Forgot Password</li>
+              <li>Create Account</li>
+              <li>Customer Support</li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="font-bold">CUSTOMER SUPPORT</h1>
+            <ul>
+              <li>Purchase History</li>
+              <li>Manage Subscriptions</li>
+              <li>Track My Order</li>
+              <li class="">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p
+          class="p-3 mx-1 mt-5 border text-blue-300 border-blue-300 text-xs md:w-8/12 md:mx-auto"
+        >
+          † STATEMENTS ON THIS WEBSITE HAVE NOT BEEN EVALUATED BY THE FOOD AND
+          DRUG ADMINISTRATION. PRODUCTS ARE NOT INTENDED TO DIAGNOSE, TREAT,
+          CURE OR PREVENT ANY DISEASE.
+        </p>
+        <p
+          class="px-2 text-blue-300 mx-auto mt-5 text-xs text-center md:w-8/12"
+        >
+          RESULTS FEATURED ON THIS WEB SITE MAY BE ATYPICAL. AS INDIVIDUALS
+          DIFFER, SO WILL RESULTS. BIOTRUST DISTRIBUTES A PRODUCT LINE MADE WITH
+          NATURAL INGREDIENTS. ALWAYS CHECK WITH YOUR DOCTOR FOR RISKS
+          ASSOCIATED WITH DIETARY SUPPLEMENTS AND YOUR SPECIFIC HEALTH
+          CONDITIONS AND/OR ALLERGIES. IF YOU ARE PREGNANT, NURSING, TAKING
+          MEDICATION, OR HAVE A MEDICAL CONDITION, CONSULT YOUR PHYSICIAN BEFORE
+          USING OUR PRODUCTS.
+        </p>
+        <p class="font-bold text-center mt-5">© 2023 BioTRUST Nutrition</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const dropdownToggles = document.querySelectorAll(".relative");
+    dropdownToggles.forEach(function (dropdownToggle) {
+      const dropdownList = dropdownToggle.querySelector(".hidden");
+
+      dropdownToggle.addEventListener("click", function () {
+        dropdownList.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", function (event) {
+        const isClickInside = dropdownToggle.contains(event.target);
+
+        if (!isClickInside) {
+          dropdownList.classList.add("hidden");
+        }
+      });
+    });
+
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", function () {
+      const expanded = this.getAttribute("aria-expanded") === "false";
+      this.setAttribute("aria-expanded", !expanded);
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    window.addEventListener("scroll", function () {
+      const myDiv = document.getElementById("myDiv");
+      const shouldStick = window.pageYOffset > 0;
+      myDiv.classList.toggle("sticky", shouldStick);
+    });
+
+    const tabs = document.querySelectorAll('[id^="tab"]');
+    const tabContent = document.getElementById("tabContent").children;
+
+    function showTab(index) {
+      for (let i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.add("hidden");
+        tabs[i].classList.remove("border-green-500");
+      }
+      tabContent[index].classList.remove("hidden");
+      tabs[index].classList.add("border-green-500");
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => showTab(index));
+    });
+
+    showTab(0);
+
+    const accordionItems = document.querySelectorAll('[id^="accordian"]');
+
+    accordionItems.forEach((item) => {
+      const button = item.querySelector("button");
+      const content = item.querySelector("div");
+
+      button.addEventListener("click", () => {
+        const isOpen = content.classList.contains("hidden");
+
+        accordionItems.forEach((item) => {
+          const content = item.querySelector("div");
+          content.classList.add("hidden");
+        });
+
+        if (isOpen) {
+          content.classList.remove("hidden");
+        }
+      });
+    });
+  </script>
+</html>

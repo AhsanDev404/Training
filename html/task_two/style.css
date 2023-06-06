@@ -1,0 +1,25 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(./background.jpg);
+}
+.image-left{
+    width: 300px;
+    aspect-ratio: auto 300 / 200;
+    height: 200px;
+    border: solid 5px;
+    float: left;
+    margin: 0 0 1em 1em;
+    vertical-align: top;
+}
+.image-right{
+    
+    border: solid 5px;
+    float: right;
+    margin: 0 0 1em 1em;
+    vertical-align: top;
+    width: 300px;
+    aspect-ratio: auto 300 / 200;
+    height: 200px;
+   
+}
