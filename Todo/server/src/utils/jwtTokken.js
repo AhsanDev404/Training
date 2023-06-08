@@ -2,8 +2,7 @@ const sendToken = (user, statusCode, res) => {
   const token = user.getJwtToken();
   const option = {
     httpOnly: true,
-    secure: true,
-    sameSite: "none",
+    
   };
 
 
