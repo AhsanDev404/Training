@@ -6,6 +6,7 @@ import sendToken from "../utils/jwtTokken.js";
 
 export const register = catchAsyncError(async (req, res, next) => {
   const { name, email, password } = req.body;
+
   const user = await User.create({ name, email, password });
   if (user) {
     return sendToken(user, 201, res);
