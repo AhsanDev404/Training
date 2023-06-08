@@ -20,10 +20,10 @@ function Login() {
   const dispatch = useDispatch();
   const navigate  = useNavigate()
     const { register, handleSubmit, formState: { errors } } = useForm({
-        resolver: yupResolver(loginValidation),
+       // resolver: yupResolver(loginValidation),
       });
       const onSubmit = (data) => {
-        axios.post("http://localhost:4000/api/login",data).then((res)=>{
+        axios.post("http://localhost:4000/api/login",data ).then((res)=>{
           dispatch({ type: "setUser", payload: res.data.user });
           navigate('/')
 
@@ -49,12 +49,12 @@ function Login() {
             <Stack spacing={4}>
               <FormControl>
                 <FormLabel>Email</FormLabel>
-                <Input {...register('email')} type="email" placeholder="Enter your email" />
+                <Input value={'ahsan@email.com'} {...register('email')} type="email" placeholder="Enter your email" />
                 {errors.email && <Text fontSize={"xs"} color={"red"}>{errors.email.message}</Text>}
               </FormControl>
               <FormControl>
                 <FormLabel>Password</FormLabel>
-                <Input {...register('password')} type="password" placeholder="Enter your password" />
+                <Input value={'12345678'} {...register('password')} type="password" placeholder="Enter your password" />
                 {errors.password && <Text fontSize={"xs"} color={"red"}>{errors.password.message}</Text>}
               </FormControl>
               <Button colorScheme="blue"  type="submit" >

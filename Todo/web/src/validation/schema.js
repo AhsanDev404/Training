@@ -13,7 +13,8 @@ export const SignUpValidation = yup.object().shape({
   name: yup
     .string()
     .required("**Name is required**")
-    .matches(/^[A-Za-z\s]+$/, "**Invalid name format**"),
+    .matches(/^[A-Za-z\s]+$/, "**Invalid name format**")
+    .min(4, "name must be 4 letters"),
   email: yup
     .string()
     .email("**Invalid email**")

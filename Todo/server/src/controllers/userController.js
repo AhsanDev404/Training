@@ -26,3 +26,10 @@ export const login = catchAsyncError(async (req, res, next) => {
   }
   return sendToken(user, 200, res);
 });
+export const getUserDetails = catchAsyncError(async(req,res,next)=>{
+  const user = await User.findById(req.user.id)
+  res.status(200).json({
+      success:true,
+      user
+  })
+})
