@@ -10,16 +10,25 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import { Link } from "react-router-dom"
+import { Link, useNavigate, useNavigation } from "react-router-dom"
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { loginValidation } from '../validation/schema';
+import axios from "axios";
+import {  useDispatch } from 'react-redux';
 function Login() {
+  const dispatch = useDispatch();
+  const navigate  = useNavigate()
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(loginValidation),
       });
       const onSubmit = (data) => {
-        console.log(data);
+        axios.post("http://localhost:4000/api/login",data).then((res)=>{
+          dispatch({ type: "setUser", payload: res.data.user });
+          navigate('/')
+
+          
+        }).catch((err)=>{console.log(err.message);})
       };
   return (
     <Flex minH="100vh" align="center" justify="center">

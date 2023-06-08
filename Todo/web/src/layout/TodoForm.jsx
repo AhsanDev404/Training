@@ -9,9 +9,21 @@ import {
   Button,
   Center,
 } from '@chakra-ui/react';
+import { useForm } from 'react-hook-form';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 
 function TodoForm() {
- 
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const {userData}  = useSelector((state)=>state.customReducer)
+  const navigate  = useNavigate()
+  const onSubmit = (data) => {
+    axios.post(`http://localhost:4000/api/todo/${userData._id}`,data).then(()=>{
+      navigate('/')
+    }).catch((err)=>{console.log(err.message);})
+  }
 
   return (
     <Center minH={"90vh"}>
@@ -25,13 +37,13 @@ function TodoForm() {
         <Heading size="lg" mb={4}>
           Add Todo
         </Heading>
-        <form >
+        <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl>
             <FormLabel>Title</FormLabel>
             <Input
               type="text"
               placeholder="Enter title"
-            
+              {...register('title')}
              
             />
           </FormControl>
@@ -40,7 +52,7 @@ function TodoForm() {
             <Input
               type="text"
               placeholder="Enter description"
-             
+              {...register('description')}
             />
           </FormControl>
           <Button colorScheme="blue" type="submit" mt={4} w="100%">

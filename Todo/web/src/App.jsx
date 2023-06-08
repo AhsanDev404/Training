@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import Login from "./layout/Login";
 import Signup from "./layout/Signup";
 import TodoForm from "./layout/TodoForm";
-import UpdateForm from "./layout/UpdateForm";
+
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/create/todo" element={<TodoForm />} />
-          <Route path="/update/todo" element={<UpdateForm />} />
+          
         </Routes>
         <Footer />
       </Router>

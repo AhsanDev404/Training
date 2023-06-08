@@ -1,15 +1,13 @@
 import React from 'react';
 import { Box, Flex, Text, Button } from '@chakra-ui/react';
+import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
-function TodoItem({ id = "id", title = "title", description = "description", status ="inprogress", onDelete, onUpdate }) {
-  const handleDelete = () => {
-    onDelete(id);
-  };
-
-  const handleUpdate = () => {
-    onUpdate(id);
-  };
-
+function TodoItem({ id = "id", title = "title", description = "description", status ="inprogress", handelDelete , handelUpdate }) {
+  const {userData}  = useSelector((state)=>state.customReducer)
+  const navigate = useNavigate()
+  const dispatch = useDispatch();
   return (
     <Box
       bg="white"
@@ -27,10 +25,15 @@ function TodoItem({ id = "id", title = "title", description = "description", sta
         {status}
       </Text>
       <Flex justify="space-between" mt={4}>
-        <Button colorScheme="red" onClick={handleDelete}>
+        <Button colorScheme="red" onClick={()=>{
+         
+         handelDelete(id)
+        }}>
           Delete
         </Button>
-        <Button colorScheme="blue" onClick={handleUpdate}>
+        <Button colorScheme="blue" onClick={()=>{
+          handelUpdate(id , title , description)
+        }} >
           Update
         </Button>
       </Flex>
